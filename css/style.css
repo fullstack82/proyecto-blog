@@ -5,6 +5,7 @@
     --fuenteParrafos: 'Open Sans', sans-serif;
     --primario: #784D3C;
     --blanco: #ffffff;
+    --gris: #a7a5a5;
     --negro: #000000;
 }
 
@@ -132,4 +133,36 @@ img {
     text-align: center;
     font-size: 1.8rem;
     color: var(--blanco)
+}
+
+
+@media(min-width: 768px) {
+    .contenido-principal {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+}
+
+.entrada {
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+
+}
+
+.entrada:last-of-type{
+    border: none;
+    margin-bottom: 0;
+}
+
+.boton {
+    display: block;
+    font-family: var(--fuenteHeading);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 3rem;
+}
+
+.boton--primario {
+    background-color: var(--negro);
 }
