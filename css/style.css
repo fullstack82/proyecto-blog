@@ -172,6 +172,7 @@ img {
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
+    border: none;
 }
 
 @media (min-width: 768px) {
@@ -179,6 +180,10 @@ img {
         display: inline-block;
 
     }
+}
+
+.boton:hover {
+    cursor: pointer
 }
 
 .boton--primario {
@@ -239,14 +244,15 @@ img {
     border-bottom: 1px solid var(--gris);
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     .curso {
         display: grid;
         grid-template-columns: 1fr 2fr;
         column-gap: 2rem;
     }
 }
-.curso:last-of-type{
+
+.curso:last-of-type {
     border: none;
 }
 
@@ -272,4 +278,35 @@ img {
     height: 40rem;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+
+/**Formulario de contacto**/
+
+.formulario {
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+    font-family: var(--fuenteParrafos);
+}
+
+.campo__label {
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+
+.campo__field {
+    flex: 1;
+    border: 1px solid var(--gris)
+}
+
+.campo__field--textarea {
+    height: 20rem;
 }
